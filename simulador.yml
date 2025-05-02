@@ -1,0 +1,38 @@
+filas:
+  - id: 1
+    servidores: 1
+    capacidade: -1
+    atendimento_min: 1
+    atendimento_max: 2
+    roteamento:
+      - destino: 2
+        probabilidade: 0.8
+      - destino: 3
+        probabilidade: 0.2
+
+  - id: 2
+    servidores: 2
+    capacidade: 5
+    atendimento_min: 4
+    atendimento_max: 8
+    roteamento:
+      - destino: 1
+        probabilidade: 0.3
+      - destino: "saida"
+        probabilidade: 0.2
+
+  - id: 3
+    servidores: 2
+    capacidade: 10
+    atendimento_min: 5
+    atendimento_max: 15
+    roteamento:
+      - destino: 1
+        probabilidade: 0.7
+      - destino: "saida"
+        probabilidade: 0.3
+
+chegadas_externas:
+  - fila: 1
+    intervalo_min: 2
+    intervalo_max: 4
